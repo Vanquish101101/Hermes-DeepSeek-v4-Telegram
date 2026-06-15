@@ -2,6 +2,17 @@
 
 ---
 
+## version 0.0.7 | Apify MCP подключён | 2026-06-15
+
+**Изменения:**
+- Подключён официальный Apify MCP (`mcp.apify.com`, 10 инструментов)
+- Удалённый HTTP сервер — без npx, без загрузки пакетов
+- Аутентификация через Bearer токен (APIFY_TOKEN)
+- Доступные инструменты: search-actors, call-actor, get-actor-run, get-dataset-items, search-apify-docs, rag-web-browser и др.
+- Gateway перезапущен с новой конфигурацией
+
+---
+
 ## version 0.0.6 | Firecrawl MCP подключён | 2026-06-15
 
 **Изменения:**
