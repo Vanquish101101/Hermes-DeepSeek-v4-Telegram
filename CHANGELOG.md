@@ -2,6 +2,17 @@
 
 ---
 
+## version 0.1.1 | OpenRouter MCP подключён | 2026-06-15
+
+**Изменения:**
+- Подключён community OpenRouter MCP (`@mcpservers/openrouterai` via npx, 4 инструмента)
+- Инструменты: chat_completion (вызов любой LLM), search_models, get_model_info, validate_model
+- Hermes теперь может вызывать GPT-4o, Claude, Gemini и любую другую модель как инструмент внутри разговора
+- Примечание: community-пакет (не официальный от OpenRouter), но стабилен для production-использования
+- Gateway перезапущен с новой конфигурацией
+
+---
+
 ## version 0.1.0 | Pinecone MCP подключён | 2026-06-15
 
 **Изменения:**
