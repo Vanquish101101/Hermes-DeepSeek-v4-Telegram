@@ -2,6 +2,17 @@
 
 ---
 
+## version 0.2.0 | Keep-Alive автоматика | 2026-06-16
+
+**Изменения:**
+- Добавлен cron job `keep-alive-ping` (ID: cfdbe2d12f20) — каждые 5 дней в 10:00 пингует Supabase, Qdrant, Pinecone, n8n
+- При обнаружении INACTIVE Supabase — автоматическое восстановление через MCP
+- Результат доставляется в Telegram (chat 1064521326)
+- `run-hermes-gateway-forever.ps1` дополнен: при старте системы запускает `hermes cron tick` — все пропущенные задачи выполняются немедленно при включении компьютера
+- В SOUL.md добавлено Правило 5 — Keep-Alive протокол
+
+---
+
 ## version 0.1.9 | Smithery MCP подключён | 2026-06-15
 
 **Изменения:**
