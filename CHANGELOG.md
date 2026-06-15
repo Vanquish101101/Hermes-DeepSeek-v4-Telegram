@@ -1,0 +1,35 @@
+# Hermes + DeepSeek v4 + Telegram — История версий
+
+---
+
+## version 0.0.2 | GitHub MCP подключён | 2026-06-15
+
+**Изменения:**
+- Подключён GitHub MCP сервер (`@modelcontextprotocol/server-github`, 26 инструментов)
+- Обновлён `GITHUB_TOKEN` в Hermes `.env` на активный ключ
+- В Hermes `.env` добавлено 28 новых API ключей (Anthropic, OpenRouter, Google/Gemini, ElevenLabs, Perplexity, Notion, LangSmith, LangGraph, Qdrant, Pinecone, Redis, Smithery, MCP Market, n8n MCP, Helicone, CrewAI, Mastra, Context7, Vercel, Runway, Supabase и др.)
+- В `SOUL.md` Hermes записаны операционные правила проекта (MCP приоритет, версионирование, проверка ключей)
+- Gateway перезапущен с новой конфигурацией
+
+---
+
+## version 0.0.1 | Первоначальная настройка | 2026-06-15
+
+**Изменения:**
+- Инициализирован репозиторий проекта
+- Hermes gateway настроен и работает (модель: `deepseek-chat`, провайдер: DeepSeek v4)
+- Telegram бот `@foresight_project_hermes_bot` подключён
+- Автоперезапуск через Scheduled Task `Hermes Gateway Wrapper`
+- Добавлены скрипты: `check-status.ps1`, `check-all-status.ps1`, `run-hermes-gateway-forever.ps1`, `start-hermes-gateway.ps1`, `import-project-settings.ps1`
+
+---
+
+## Формат версий
+
+```
+Название | краткое описание изменения | version X.X.X
+```
+
+- **X** (мажор) — полная перестройка архитектуры
+- **X.X** (минор) — новый агент, MCP, интеграция
+- **X.X.X** (патч) — правки конфига, ключи, скрипты
