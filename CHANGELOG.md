@@ -2,6 +2,15 @@
 
 ---
 
+## version 0.0.8 | Perplexity MCP подключён | 2026-06-15
+
+**Изменения:**
+- Подключён официальный Perplexity MCP (`@perplexity-ai/mcp-server`, 4 инструмента)
+- Доступные инструменты: perplexity_ask (Sonar Pro), perplexity_research (глубокое исследование), perplexity_reason (пошаговый анализ), perplexity_search (веб-поиск с источниками)
+- Gateway перезапущен с новой конфигурацией
+
+---
+
 ## version 0.0.7 | Apify MCP подключён | 2026-06-15
 
 **Изменения:**
