@@ -2,6 +2,16 @@
 
 ---
 
+## version 0.1.5 | LangSmith MCP подключён | 2026-06-15
+
+**Изменения:**
+- Подключён официальный LangSmith MCP (`langsmith-mcp-server` via uvx, от LangChain AI)
+- Инструменты: просмотр трейсов, runs, промптов, проектов наблюдаемости (observability)
+- Аутентификация через LANGSMITH_API_KEY
+- Gateway перезапущен с новой конфигурацией
+
+---
+
 ## version 0.1.4 | Vercel MCP подключён | 2026-06-15
 
 **Изменения:**
