@@ -2,6 +2,15 @@
 
 ---
 
+## version 0.1.0 | Pinecone MCP подключён | 2026-06-15
+
+**Изменения:**
+- Подключён официальный Pinecone MCP (`@pinecone-database/mcp` via npx, 9 инструментов)
+- Доступные инструменты: list-indexes, search-records, upsert-records, create-index-for-model, rerank-documents, cascading-search, search-docs
+- Gateway перезапущен с новой конфигурацией
+
+---
+
 ## version 0.0.9 | Qdrant MCP подключён | 2026-06-15
 
 **Изменения:**
