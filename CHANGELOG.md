@@ -2,6 +2,15 @@
 
 ---
 
+## version 0.0.6 | Firecrawl MCP подключён | 2026-06-15
+
+**Изменения:**
+- Подключён официальный Firecrawl MCP (`firecrawl-mcp` via npx, 20 инструментов)
+- Доступные инструменты: scrape, search, crawl, extract, agent (автономный веб-исследователь), interact (браузер), monitors (мониторинг сайтов с diff)
+- Gateway перезапущен с новой конфигурацией
+
+---
+
 ## version 0.0.5 | Notion MCP подключён | 2026-06-15
 
 **Изменения:**
