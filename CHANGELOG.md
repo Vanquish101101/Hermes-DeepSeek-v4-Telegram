@@ -2,6 +2,16 @@
 
 ---
 
+## version 0.0.4 | n8n MCP подключён | 2026-06-15
+
+**Изменения:**
+- Подключён n8n MCP (`vanquish.app.n8n.cloud/mcp-server/http`, 28 инструментов)
+- Аутентификация через Bearer токен из n8n cloud
+- Доступные инструменты: search_workflows, execute_workflow, create_workflow_from_code, get_execution, publish_workflow, search_data_tables, create_data_table, validate_workflow и др.
+- Gateway перезапущен с новой конфигурацией
+
+---
+
 ## version 0.0.3 | Supabase MCP подключён | 2026-06-15
 
 **Изменения:**
