@@ -2,6 +2,17 @@
 
 ---
 
+## version 0.0.5 | Notion MCP подключён | 2026-06-15
+
+**Изменения:**
+- Подключён официальный Notion MCP (`@notionhq/notion-mcp-server`, 22 инструмента)
+- Прямое подключение от Notion — без посредников (лучше чем MCP Market)
+- Аутентификация через NOTION_TOKEN (Integration token)
+- Доступные инструменты: поиск по workspace, страницы (create/update/move), блоки, базы данных, комментарии, data sources
+- Gateway перезапущен с новой конфигурацией
+
+---
+
 ## version 0.0.4 | n8n MCP подключён | 2026-06-15
 
 **Изменения:**
