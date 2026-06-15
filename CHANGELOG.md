@@ -2,6 +2,16 @@
 
 ---
 
+## version 0.0.3 | Supabase MCP подключён | 2026-06-15
+
+**Изменения:**
+- Подключён официальный Supabase MCP (`https://mcp.supabase.com`, 20 инструментов)
+- Аутентификация через PAT токен (Personal Access Token)
+- Доступные инструменты: execute_sql, list_tables, list_migrations, apply_migration, get_logs, deploy_edge_function, create_branch, generate_typescript_types и др.
+- Gateway перезапущен с новой конфигурацией
+
+---
+
 ## version 0.0.2 | GitHub MCP подключён | 2026-06-15
 
 **Изменения:**
