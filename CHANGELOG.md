@@ -2,6 +2,18 @@
 
 ---
 
+## version 0.2.3 | Gemini MCP подключён | 2026-06-16
+
+**Изменения:**
+- Подключён community MCP `@houtini/gemini-mcp` (npx) для Google AI Studio / Gemini
+- 13 инструментов: gemini_chat (с Google Search grounding), gemini_deep_research, generate_image, генерация SVG/диаграмм, генерация видео, мультимодальный анализ
+- Ключ GEMINI_API_KEY уже был в Hermes .env — использован существующий
+- Дополняет OpenRouter MCP: прямой доступ к Gemini 3 с grounding и deep research, которого нет в OpenRouter
+- MCP key connection.txt обновлён: 19 подключённых MCP серверов (15 официальных, 3 community, 1 через прокси)
+- Gateway перезапущен с новой конфигурацией
+
+---
+
 ## version 0.2.2 | Digital Brain папка + Git commit body | 2026-06-16
 
 **Изменения:**
