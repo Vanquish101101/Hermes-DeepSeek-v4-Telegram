@@ -2,6 +2,17 @@
 
 ---
 
+## version 0.3.0 | ChromaDB MCP подключён | 2026-06-16
+
+**Изменения:**
+- Подключён официальный `chroma-mcp` (PyPI, через uvx) в Cloud-режиме
+- Параметры: `--client-type cloud --tenant <tenant> --database vanquish_project --api-key <key>` (host `api.trychroma.com` определяется автоматически)
+- 13 инструментов: list/create/modify/delete/fork_collection, peek_collection, get_collection_info/count, add/query/get/update/delete_documents
+- Облачное векторное хранилище — дополняет Qdrant (другой провайдер, та же категория задач)
+- Gateway перезапущен, всего подключено 24 MCP сервера
+
+---
+
 ## version 0.2.9 | YouGile MCP подключён | 2026-06-16
 
 **Изменения:**
