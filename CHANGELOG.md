@@ -2,6 +2,17 @@
 
 ---
 
+## version 0.2.7 | Make.com MCP подключён | 2026-06-16
+
+**Изменения:**
+- Подключён официальный Make MCP Server (Remote HTTP, Stateless Streamable HTTP) для зоны `eu1.make.com`
+- Аутентификация через специальный MCP-токен (не обычный API-ключ организации) — найден на странице MCP-подключения Make ("Default key")
+- 129 инструментов: полное управление сценариями (CRUD + run), executions, webhooks, data stores, custom apps, RPC и др.
+- Попутно добавлен `google_calendar` через MCP Market — пока не работает (OAuth credentials не активны на стороне MCP Market), ждёт переавторизации пользователем
+- Gateway перезапущен, всего подключено 21 MCP сервер
+
+---
+
 ## version 0.2.6 | Context7 MCP подключён | 2026-06-16
 
 **Изменения:**
