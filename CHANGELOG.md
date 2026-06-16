@@ -2,6 +2,19 @@
 
 ---
 
+## version 0.2.4 | Проверка всех MCP + исправлен Smithery | 2026-06-16
+
+**Изменения:**
+- Полная проверка всех 19 подключённых MCP серверов через `hermes mcp test`
+- Обнаружено: Smithery упал после обновления CLI до v4 (полностью новая архитектура — старый статичный ключ через `--key` больше не поддерживается)
+- Smithery исправлен: переключён на OAuth2 + PKCE через `npx mcp-remote https://server.smithery.ai/smithery` — одноразовая браузерная авторизация, токен кэшируется и обновляется автоматически
+- Тот же `mcp-remote` подход уже зарезервирован как fallback для Vercel — теперь это общий паттерн для любых MCP, требующих OAuth2 PKCE
+- Gemini остаётся НЕ рабочим — ключ `AQ.Ab8RN6LZ...` не проходит валидацию у самого Google (Status 400). Нужен новый ключ формата `AIzaSy...` с aistudio.google.com/apikey
+- 17 из 19 серверов подтверждены рабочими: pinecone, qdrant, perplexity, apify, firecrawl, notion, n8n, supabase, github, openrouter, replicate, elevenlabs, vercel, langsmith, runway, helicone, miro
+- MCP key connection.txt обновлён с деталями диагностики
+
+---
+
 ## version 0.2.3 | Gemini MCP подключён | 2026-06-16
 
 **Изменения:**
