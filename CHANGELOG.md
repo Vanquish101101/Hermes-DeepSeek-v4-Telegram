@@ -2,6 +2,16 @@
 
 ---
 
+## version 0.3.1 | Sentry MCP подключён | 2026-06-16
+
+**Изменения:**
+- Подключён официальный Sentry MCP (`https://mcp.sentry.dev/mcp`) — полностью OAuth, API-ключ не требуется (то что ключ не был сохранён ранее — не проблема, для этого MCP он не нужен)
+- Авторизация через `mcp-remote` bridge (тот же паттерн что для Smithery) — одноразовый браузерный вход, токен кэшируется и обновляется автоматически
+- 8 инструментов: find_organizations, find_projects, search_events, search_issues, analyze_issue_with_seer (AI-анализ ошибок через Seer), get_sentry_resource, search/execute_sentry_tool
+- Gateway перезапущен, всего подключено 25 MCP серверов
+
+---
+
 ## version 0.3.0 | ChromaDB MCP подключён | 2026-06-16
 
 **Изменения:**
