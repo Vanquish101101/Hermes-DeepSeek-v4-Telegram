@@ -2,6 +2,18 @@
 
 ---
 
+## version 0.2.5 | Gemini ключ исправлен — все 19 MCP рабочие | 2026-06-16
+
+**Изменения:**
+- Найден рабочий ключ Gemini/Google AI Studio: `AQ.Ab8RN6Jxv...` (новый формат ключей Google, отличается от старого `AIzaSy...`)
+- Проверен напрямую через curl на `generativelanguage.googleapis.com` — `200 OK`, до этого ошибочно отклонён как невалидный по формату (поспешный вывод без эмпирической проверки)
+- Обновлён `GEMINI_API_KEY` и `GOOGLE_API_KEY` в config.yaml и .env
+- `hermes mcp test gemini` подтвердил: 13 инструментов (chat, deep research, generate_image/video/svg, image analysis)
+- **Все 19 подключённых MCP серверов теперь рабочие** — полная проверка завершена
+- MCP key connection.txt обновлён с пометкой про новый формат ключей Google
+
+---
+
 ## version 0.2.4 | Проверка всех MCP + исправлен Smithery | 2026-06-16
 
 **Изменения:**
