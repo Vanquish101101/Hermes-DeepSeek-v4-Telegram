@@ -2,6 +2,16 @@
 
 ---
 
+## version 0.2.8 | PostMyPost MCP подключён | 2026-06-16
+
+**Изменения:**
+- Подключён официальный PostMyPost MCP Server (Remote HTTP, `https://mcp.postmypost.io/mcp`)
+- Аутентификация через тот же ключ что в API Keys.txt (Authorization: Bearer)
+- 15 инструментов: публикации (create/update/delete/list/get), аккаунты, каналы, рубрики, загрузка медиафайлов, аналитика по аккаунтам и публикациям
+- Gateway перезапущен, всего подключено 22 MCP сервера
+
+---
+
 ## version 0.2.7 | Make.com MCP подключён | 2026-06-16
 
 **Изменения:**
