@@ -2,6 +2,23 @@
 
 ---
 
+## version 0.3.2 | Skill SH: 8 скилов установлено по 7 категориям | 2026-06-17
+
+**Изменения:**
+- Сравнены скилы skills.sh vs собственные builtin-скилы Hermes по 7 категориям (Web Design, Programming, 3D Modeling, Audio, Video, Marketing, Neural AI) — таблицы сохранены в память
+- Установлено 8 скилов через `hermes skills install` (Hub: skills.sh, trust: community, verdict: SAFE/CAUTION-override после ручной проверки):
+  - `backend-development` (mindrally/skills) — закрывает разрыв backend в Web Design
+  - `modern-javascript-patterns` (wshobson/agents) + `game-developer` (jeffallan/claude-skills) — Programming для web & game
+  - `3d-web-experience` (sickn33/antigravity-awesome-skills) — дополняет blender-mcp/touchdesigner-mcp
+  - `ai-music-generation` (inference-sh/skills) — закрывает дыру от audiocraft (Windows-несовместим)
+  - `seo-audit`, `copywriting`, `content-strategy` (coreyhaines31/marketingskills) — полностью новая категория Marketing (топ-3 по installs во всём исследовании: 139.3K/129.1K/90.8K)
+- Video production: без изменений — `hyperframes` у Hermes уже совпадает с #1 пиком Skill SH (101.3K installs)
+- Neural AI / Neurology: без изменений — Hermes уже сильно покрыт (huggingface-hub, segment-anything-model, weights-and-biases), Neurology — разрыв с обеих сторон
+- 2 скила (`copywriting`, `content-strategy`) потребовали `--force`: сканер дал CAUTION на ложноположительные срабатывания (eval-фикстура с тестовой строкой и относительные markdown-ссылки `../../../` в документации) — проверено вручную, подтверждено безопасно
+- `hermes doctor` после установки: 0 новых проблем, lock file consistent (12 hub-installed skills)
+
+---
+
 ## version 0.3.1 | Sentry MCP подключён | 2026-06-16
 
 **Изменения:**
