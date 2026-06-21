@@ -20,7 +20,12 @@
 | **Replicate** | per run / per second GPU | зависит от модели (~$0.0005–0.05/сек) | replicate.com биллинг |
 | **ElevenLabs** | TTS/STT | по символам/плану | elevenlabs.io usage |
 | **Runway** | видео-кредиты | по кредитам Gen-модели | runwayml.com биллинг |
-| **Firecrawl** | scrape/crawl | по кредитам/страницам | firecrawl.dev usage |
+| **Firecrawl** | `scrape` (1 страница, markdown) | 1 кредит | факт. проверено 21.06: `creditsUsed:1` |
+| **Firecrawl** | `map` (карта URL сайта) | 0 кредитов (бесплатно) | факт. проверено 21.06 |
+| **Firecrawl** | `search` (веб-поиск без скрапа) | ≈1.3 кредита/результат | факт. проверено 21.06: 3 результата = 4 кредита |
+| **Firecrawl** | `v2/scrape` с `json`-форматом (структур. данные по схеме) | 5 кредитов | факт. проверено 21.06 — **используй этот**, не extract |
+| **Firecrawl** | `/v1/extract` (⚠️ deprecated) | 22 кредита | НЕ использовать, см. SOUL.md §5/§9 |
+| **Firecrawl** | план | 1000 кредитов / billing-период (фикс-пул, не $/запрос) | firecrawl.dev/billing — $ за кредит API не отдаёт |
 | **Apify** | акторы | compute units + per-result | apify.com биллинг |
 
 ## Обычно фикс-подписка / free-tier (per-request не считаем)
