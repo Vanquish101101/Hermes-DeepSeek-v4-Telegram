@@ -1,0 +1,32 @@
+# 💲 Таблица цен инструментов Hermes (Cost Pricing)
+
+Ставки для оценки стоимости запросов в журнале `cost-ledger.md` (правило `SOUL.md` §8).
+
+> ⚠️ Цены **ориентировочные**, для прикидки. Где инструмент возвращает фактическую стоимость в ответе
+> (Perplexity) — всегда берём её, а не эту таблицу. Точные суммы сверять в биллинге сервиса/Helicone.
+> Проверять эмпирически (правило проекта «проверять ключи и факты эмпирически»).
+
+## Платные per-request (считаем всегда)
+
+| Инструмент | Модель/единица | Ориентир. ставка | Откуда брать точную |
+|---|---|---|---|
+| **Perplexity** | `sonar` | ~$0.005/запрос + токены | `usage.cost.total_cost` в ответе ✅ |
+| **Perplexity** | `sonar-pro` | дороже sonar (поиск+токены) | ответ API ✅ |
+| **Perplexity** | `sonar-reasoning-pro` | + reasoning-токены | ответ API ✅ |
+| **Perplexity** | `sonar-deep-research` | самый дорогой (многошаговый) | ответ API ✅ |
+| **DeepSeek v4** (дефолт) | `deepseek-chat` | ≈$0.27/1M вход · ≈$1.10/1M выход | Helicone / биллинг DeepSeek |
+| **OpenRouter** | зависит от модели | по прайсу выбранной модели | openrouter.ai/models · Helicone |
+| **Gemini** | через `@houtini/gemini-mcp` | по прайсу Google AI | Google AI Studio биллинг |
+| **Replicate** | per run / per second GPU | зависит от модели (~$0.0005–0.05/сек) | replicate.com биллинг |
+| **ElevenLabs** | TTS/STT | по символам/плану | elevenlabs.io usage |
+| **Runway** | видео-кредиты | по кредитам Gen-модели | runwayml.com биллинг |
+| **Firecrawl** | scrape/crawl | по кредитам/страницам | firecrawl.dev usage |
+| **Apify** | акторы | compute units + per-result | apify.com биллинг |
+
+## Обычно фикс-подписка / free-tier (per-request не считаем)
+Notion, Supabase, GitHub, Vercel, LangSmith, **Helicone** (учёт), Miro, n8n, Make,
+PostMyPost, YouGile, Chroma, Sentry, Pinecone, Qdrant, Context7, Smithery, Google Calendar —
+тарифицируются планом/лимитами, а не за вызов. Если конкретный сервис перешёл на оплату за запрос — добавить сюда строку и учитывать.
+
+---
+Обновлено: 2026-06-21. При подключении нового платного инструмента — дополнять таблицу.
