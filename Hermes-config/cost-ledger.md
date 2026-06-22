@@ -34,6 +34,9 @@
 | 24 | 2026-06-22 1x:xx | YouGile REST API | `POST /projects,/boards,/columns` | создание структуры «Foresight — Задачи (Hermes)» (проект+доска+3 колонки) | $0.00000 | $0.06050 |
 | 25 | 2026-06-22 1x:xx | YouGile REST API | `POST /tasks` | первая реальная задача «Продлить тариф PostMyPost» | $0.00000 | $0.06050 |
 | 26 | 2026-06-22 1x:xx | Vercel REST API | `GET /v2/user,/v9/projects,/v6/deployments` | проверка ключа, обзор проекта `test-landing-vercel-project-core` и истории деплоев | $0.00000 | $0.06050 |
+| 27 | 2026-06-22 1x:xx | Smithery MCP | `namespaces_list`/`servers_list`/`connect_by_namespace_get` | проверка namespace, обзор подключений, поиск кандидата `servers_list(q="sentry")` | $0.00000 | $0.06050 |
+| 28 | 2026-06-22 1x:xx | Notion API | `POST /v1/pages` | находка про Sentry MCP (через Smithery) в базе «Исследования и находки» | $0.00000 | $0.06050 |
+| 29 | 2026-06-22 1x:xx | YouGile REST API | `POST /tasks` | задача «Подключить Sentry MCP (найден через Smithery)» | $0.00000 | $0.06050 |
 
 ---
 
@@ -54,3 +57,4 @@
 - Запись №22 — вторая Notion-база «Публикации (PostMyPost)» для лога будущих публикаций, отдельная от «Исследования и находки».
 - Записи №23-25 — YouGile тарифицируется фиксированным планом (не за вызов). В компании уже было демо-содержимое («Example Project») — не трогали, создали отдельный проект «Foresight — Задачи (Hermes)». Первая реальная задача связывает YouGile с находкой из PostMyPost (запись №21/SOUL.md §11.2). См. SOUL.md §12, `YouGile-setup.md`.
 - Запись №26 — Vercel на плане hobby (бесплатный), вызовы статуса/чтения — $0.00. Только чтение (`GET`), без write-вызовов — найден существующий проект `test-landing-vercel-project-core` и его реальная история деплоев. См. SOUL.md §13, `Vercel-setup.md`.
+- Записи №27-29 — Smithery тарифицируется фиксированным планом (не за вызов). Конкретная демонстрация роли «реестр-разведчик»: `servers_list(q="sentry")` нашёл официальный verified-сервер `sentry` (заброшенный в TODO-списке неподключённых сервисов) → находка записана в Notion (запись №28) → задача на подключение поставлена в YouGile (запись №29). См. SOUL.md §14, `Smithery-setup.md`.
