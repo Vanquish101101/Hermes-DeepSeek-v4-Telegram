@@ -18,6 +18,7 @@
 | **OpenRouter** | любая модель (`chat_completion` MCP) | зависит от модели | `usage.cost` в ответе ✅ (факт. проверено 21.06: claude-haiku-4.5 = $0.000034) |
 | **OpenRouter** | `openrouter/pareto-code` (Pareto Code Router) | цена авто-выбранной модели, проходящей `min_coding_score` | `usage.cost` в ответе ✅ |
 | **OpenRouter** | повтор идентичного запроса в течение 300с (`response_cache`) | **$0 — бесплатно** (edge-кэш) | заголовок `X-OpenRouter-Cache`, см. SOUL.md §4.3 |
+| **OpenRouter** | `minimax/minimax-m3` | $0.30/1M вход · $1.20/1M выход (cache read $0.06/1M) — дешевле всех в таблице | `usage.cost` в ответе ✅, факт. проверено 22.06 |
 | **Gemini** | через `@houtini/gemini-mcp` | по прайсу Google AI | Google AI Studio биллинг |
 | **Replicate** | per run / per second GPU | зависит от модели (~$0.0005–0.05/сек) | replicate.com биллинг |
 | **ElevenLabs** | TTS/STT | по символам/плану | elevenlabs.io usage |
@@ -36,4 +37,4 @@ PostMyPost, YouGile, Chroma, Sentry, Pinecone, Qdrant, Context7, Smithery, Googl
 тарифицируются планом/лимитами, а не за вызов. Если конкретный сервис перешёл на оплату за запрос — добавить сюда строку и учитывать.
 
 ---
-Обновлено: 2026-06-21 (добавлен OpenRouter). При подключении нового платного инструмента — дополнять таблицу.
+Обновлено: 2026-06-22 (добавлен `minimax/minimax-m3` через OpenRouter). При подключении нового платного инструмента — дополнять таблицу.
