@@ -14,7 +14,7 @@ LANGGRAPH_SERVICE_KEY=lsv2_sk_***   # service-токен
 LangGraph Platform авторизуется через LangSmith API-ключи (общая инфраструктура аккаунта).
 
 ## Архитектура
-Полное описание — `SOUL.md` §19. LangGraph — продукт принципиально другого типа, чем все остальные
+Полное описание — `SOUL.md` §2. LangGraph — продукт принципиально другого типа, чем все остальные
 сервисы оркестрации: не SaaS-API на каждый вызов, а **(1)** open-source библиотека для построения
 графовых агентных workflow с состоянием/циклами/условными переходами, исполняемая прямо в коде, и
 **(2)** платный хостинг для деплоя таких графов («LangGraph Platform», в API — «LangSmith Deployment»).
@@ -61,7 +61,7 @@ LangSmith (Plus и выше включает LangGraph Platform deployments). Д
   механизм (графовый код в Hermes vs делегирование Claude Code субагентам) — статусы независимы.
 
 ## Связанные правила/файлы
-- `SOUL.md` §19 (архитектура), §18 (LangSmith — общая инфраструктура и tenant).
+- `SOUL.md` §2 (архитектура), §1 (LangSmith — общая инфраструктура и tenant).
 - `cost-ledger.md` — проверочные вызовы $0.00 (запрос отработал, просто вернул 403 по тарифу).
 - `project_balance_funding_tracker.md` / `project_known_bugs_registry.md` — новая запись (тарифный
   блокер LangGraph Platform).
