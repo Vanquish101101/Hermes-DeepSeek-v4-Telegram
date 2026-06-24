@@ -66,4 +66,4 @@ Perplexity вернул ссылку-цитату на статью → нуже
 ## Связанные правила/файлы
 - `SOUL.md` §5 (роутинг: ниша Firecrawl vs Perplexity), §9 (использовать `v2/scrape json`, не `/v1/extract`).
 - `cost-ledger.md` (записи №5-9), `cost-pricing.md` (ставки в кредитах).
-- `Departments/Инструкция к оркестрации 1 (Foresight).md` — Этап 3, роль в OSINT-пайплайне.
+- `Departments/Инструкция к оркестрации 3 (Неиспользуемая версия).md` (бывшая «1 (Foresight)») — Этап 3, роль в OSINT-пайплайне.
